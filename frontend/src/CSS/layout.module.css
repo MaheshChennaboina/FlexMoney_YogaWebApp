@@ -1,0 +1,63 @@
+*
+{
+    box-sizing: border-box;
+}
+.size
+{
+    width: 90vw;
+}
+.title
+{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bar
+{
+    display: flex;
+}
+.anchor
+{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+
+}
+.signup
+{
+    border: 2px solid #227C70;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color:#227C70;
+    color: #fff;
+    margin-right: 5px;
+
+}
+
+.btnColor{
+    color: #fff;
+}
+.list
+{
+    flex: 1.5;
+    list-style: none;
+    
+}
+
+.navBar
+{
+    padding: 5px;
+
+}
+.signup:hover{
+    background-color: green;
+}
+.link
+{
+    text-decoration: none;
+    color:rgb(34, 81, 34);
+    font-weight: bold;
+
+}
+.link:hover{
+    color: green;
+}

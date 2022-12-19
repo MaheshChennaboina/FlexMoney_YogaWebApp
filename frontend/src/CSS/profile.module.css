@@ -1,0 +1,59 @@
+.outer_box{
+    border-radius:10px ;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: justify;
+    background-color: #57968d;
+}
+.box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title
+{
+    color: #fff;
+    font-size: 2rem;
+    text-align:  center;
+    text-align: center;
+    margin-left: auto;
+    background-color: #227C70;
+}
+.btn{
+    padding: 10px 5px;
+    border: none;
+    background-color:#fff;
+    font: 1rem;
+    border-radius: 5px;
+    background-color: #227C70;
+    margin-left: 5px;
+}
+.outer_box h2
+{
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left:10px ;
+}
+.date
+{
+    display: flex;
+    align-items: space-around;
+    justify-content:space-around;
+    margin: 0;
+}
+.date h2
+{
+    margin-left: 10px;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+.update
+{
+    margin: 3px;
+    padding: 10px;
+}
+

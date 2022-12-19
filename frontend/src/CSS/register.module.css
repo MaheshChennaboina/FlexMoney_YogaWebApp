@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+.slide
+{
+    width: 100%;
+    display: flex;
+}
+.level
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.value
+{
+     width: 50%;
+     padding: 10px;
+}
+.btn
+{
+    padding: 10px;
+    width: 50%;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color:  #227C70;;
+    font-size: 1.2rem;
+    color: #fff;
+    outline: none;
+
+}
+.btn:hover
+{
+    background-color:green;
+}

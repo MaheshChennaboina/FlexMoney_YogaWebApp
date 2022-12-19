@@ -1,0 +1,59 @@
+.outer
+{
+    border: 2px solid #227C70;;
+    background-color: #227C70;;
+    border-radius: 10px;
+    width: 30vw;
+    height: 80vh;
+    margin: auto;
+}
+.order_list
+{
+    text-align: justify;
+    margin: 20px 80px;
+}
+.list
+{
+    list-style: none;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 2px;
+    line-height: 30px;
+}
+.perMonth
+{
+    font-size: 1rem;
+    margin-left: 4px;
+}
+.title
+{
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    background-color: green;
+    padding: 50px;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+}
+.money
+{
+    font-size: 4rem;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+.btn
+{
+    background-color: green;
+    padding: 20px 40px;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.sale
+{
+    text-decoration: none;
+    color: #fff;
+}

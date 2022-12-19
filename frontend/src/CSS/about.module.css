@@ -1,0 +1,45 @@
+.articles
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+article
+{
+    width: 30%;
+    height: 40%;
+    border: 2px solid green;
+    margin: 5px;
+    border-radius: 5px;
+}
+article p
+{
+    text-align: justify;
+    margin: 0 2px;
+}
+article img
+{
+    width: 100%;
+
+}
+.email
+{
+    font-size: 1rem;
+}
+.bio
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #227C70;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.p1
+{
+    font-size: 1rem;
+    font-weight: 1rem;  
+}

@@ -1,0 +1,30 @@
+.box{
+    border: 2px solid green;
+    width: 50%;
+    margin: auto;
+}
+.box label
+{
+    font-size: 1rem;
+    color:#000;
+    margin: 5px;
+}
+.box select
+{
+    width: 10%;
+    height: 100%;
+}
+.box button
+{
+    border: none;
+    outline: none;
+    padding: 2px 8px;
+    background-color:  #227C70;
+    margin: 5px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.box button:hover{
+    background-color: green;
+}
