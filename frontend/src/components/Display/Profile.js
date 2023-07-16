@@ -26,7 +26,7 @@ function Profile() {
     const [updateUserBatch,setUpdateUserBatch] = useState([])
     useEffect(()=>{
        async function profileDisplay() {
-        await axios.get("http://localhost:8080/batchandpaid").then((response)=>{
+        await axios.get("https://yogamantra-backend.onrender.com/batchandpaid").then((response)=>{
           response.data.map((user)=>{
               if(uemail === user.email)
               {
@@ -43,7 +43,7 @@ function Profile() {
         })
       }
       const fetchUpdate = async()=>{
-        await axios.get('http://localhost:8080/updateBatch')
+        await axios.get('https://yogamantra-backend.onrender.com/updateBatch')
         .then((response)=>{
               response.data.map((user)=>{
                 <div key={user.id}>
@@ -72,7 +72,7 @@ function Profile() {
       
     }
     const updateBatch = async()=>{
-      await axios.post('http://localhost:8080/updateBatch',{email:uemail}).then((response)=>{
+      await axios.post('https://yogamantra-backend.onrender.com/updateBatch',{email:uemail}).then((response)=>{
         console.log(response)
       })
     }
@@ -111,7 +111,7 @@ function Profile() {
         </div>
       </div>) : (login) ? (<>
         <h1>Welcome to YogaMantra</h1>
-        <h1>Hi {name}</h1>
+        <h1>Hi <spna style={{color:"green"}}>{name}</spna></h1>
         <h1>You doesn't have premium membership</h1>
       </>): <RealUser></RealUser> }
        

@@ -1,6 +1,6 @@
 /* eslint-disable no-lone-blocks */
 /* eslint-disable array-callback-return */
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import {useState} from 'react'
 import reg from '../../CSS/register.module.css'
 import yoga from '../../Img/girlYoga.jpg'
@@ -25,7 +25,7 @@ function Register() {
     axios.defaults.withCredentials = true
     useEffect(()=>{
         const validEmail = async()=>{
-            await axios.get("http://localhost:8080/")
+            await axios.get("https://yogamantra-backend.onrender.com/")
             .then((response)=>{
                     response.data.map((user)=>{
                             <div key={user.id}>
@@ -65,7 +65,7 @@ function Register() {
         console.log(`final passwaord:${passlength}`)
      }
      const postUser = async()=>{
-        await axios.post("http://localhost:8080/signup",{...user,emaill:email,password:password}).then((response)=>{
+        await axios.post("https://yogamantra-backend.onrender.com/signup",{...user,emaill:email,password:password}).then((response)=>{
             console.log('inside the postuser')
             console.log("inside the ")
             navigate('/login')

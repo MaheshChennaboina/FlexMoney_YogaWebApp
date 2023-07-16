@@ -1,20 +1,21 @@
 import express from 'express'
-import mysql2 from 'mysql2';
+// import mysql2 from 'mysql2';
 import cors from 'cors'
 import bcrypt from 'bcrypt'
 import session from 'express-session';
 import bodyParser from 'body-parser'
 import cookieParser  from 'cookie-parser'
+import {db} from './config/db.js'
 
 const app = express()
-const port = 8080
-const db    = mysql2.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"9550462493@Aa",
-    database:"flexmoney",
+const port = 10000
+// const db    = mysql2.createConnection({
+//     host:"localhost",
+//     user:"root",
+//     password:"9550462493@Aa",
+//     database:"flexmoney",
     
-})
+// })
 app.use(express.json());
 app.use(cors(
     {

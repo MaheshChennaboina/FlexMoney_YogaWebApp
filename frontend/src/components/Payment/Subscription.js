@@ -18,7 +18,7 @@ function Subscription() {
   
     useEffect(()=>{
       const getpaidUsers = async ()=>{
-        await axios.get("http://localhost:8080/admission")
+        await axios.get("https://yogamantra-backend.onrender.com/admission")
         .then((response)=>{
         response.data.map((user)=>{
           let i = response.data.length;
@@ -45,7 +45,7 @@ function Subscription() {
     },[])
     const payHandler = ()=>{
       const userpay = async()=>{
-        await axios.post('http://localhost:8080/successPayment',{email:uemail,startDate:startDate,endDate:endDate,balance:total})
+        await axios.post('https://yogamantra-backend.onrender.com/successPayment',{email:uemail,startDate:startDate,endDate:endDate,balance:total})
         .then((response)=>{
           console.log(response)
           setDoPay(true)

@@ -36,7 +36,7 @@ function BookSlot(props) {
             e.preventDefault()
             const finalUserData = {...paidUsers,email:uemail}
             const postUserDetails = async ()=>{
-                await axios.post('http://localhost:8080/admissionForm',finalUserData)
+                await axios.post('https://yogamantra-backend.onrender.com/admissionForm',finalUserData)
                 .then((response)=>{
                     console.log("user details submitted....")
                     console.log(response)
@@ -48,7 +48,7 @@ function BookSlot(props) {
     }
     useEffect(()=>{
         const checkDate = async ()=>{
-            await axios.get("http://localhost:8080/successPayment")
+            await axios.get("https://yogamantra-backend.onrender.com/successPayment")
             .then((response)=>{
                 response.data.map((user)=>{
                     if(user.email === uemail)

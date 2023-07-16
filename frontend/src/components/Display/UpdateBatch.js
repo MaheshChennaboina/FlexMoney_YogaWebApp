@@ -16,7 +16,7 @@ function UpdateBatch() {
 
     useEffect(()=>{
         async function profileDisplay() {
-            await axios.get("http://localhost:8080/batchandpaid").then((response)=>{
+            await axios.get("https://yogamantra-backend.onrender.com/batchandpaid").then((response)=>{
               response.data.map((user)=>{
                   if(uemail === user.email)
                   {
@@ -31,7 +31,7 @@ function UpdateBatch() {
         e.preventDefault()
         console.log(already)
         const updateBatch = async()=>{
-            await axios.post('http://localhost:8080/update',{email:uemail,batch:batch,ubatch:ubatch}).then((response)=>{
+            await axios.post('https://yogamantra-backend.onrender.com/update',{email:uemail,batch:batch,ubatch:ubatch}).then((response)=>{
               console.log(response)
             })
         }    

@@ -32,7 +32,7 @@ function Login(props) {
     const formHandler = async (e)=>
     {
         e.preventDefault()
-        await Axios.post("http://localhost:8080/login",userLogin).then((response)=>{
+        await Axios.post("https://yogamantra-backend.onrender.com/login",userLogin).then((response)=>{
           if(response.data[0].name)
           {
             console.log("successfull login")
@@ -62,7 +62,7 @@ function Login(props) {
     useEffect(()=>{
         const fetchLogin = async ()=>
         {
-          await Axios.get('http://localhost:8080/login').then((response)=>{
+          await Axios.get('https://yogamantra-backend.onrender.com/login').then((response)=>{
             if(response.data.loggedIn)
             {
                 setIslogin(response.data.loggedIn)

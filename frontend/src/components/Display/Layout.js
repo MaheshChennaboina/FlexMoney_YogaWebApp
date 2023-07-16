@@ -15,7 +15,7 @@ function Layout(props) {
   console.log(login)
 
   async function logoutHandler() {
-    await axios.get('http://localhost:8080/logout').then((response) => {
+    await axios.get('https://yogamantra-backend.onrender.com/logout').then((response) => {
       userLoginStatus(false)
       userEmail("")
       subscribeHandler(false)
